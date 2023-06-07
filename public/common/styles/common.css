@@ -75,6 +75,7 @@ button:focus{outline: none;}
 .link{cursor: pointer;}
 .flexbox{display: flex; }
 
+/* chaper1 레이아웃 */
 #wrap {display: flex;flex-direction: column; height: 100%;}
 footer { margin-top: auto;position: relative;}
 .contentbox {width: 100%;max-width: 1200px;margin: 0 auto; padding: 0 20px;}
@@ -101,6 +102,7 @@ header::after {content: "";display: block;width: 100%;height: 29px;background-co
 .footer-logo, .footer-sub {position: relative;z-index: 3;}
 .footer-logo img {width: 125px;}
 .footer-sub {flex: 1;padding-left: 20px;font-size: 12px;}
+
 /* 태블릿 */
 @media screen and (max-width: 767px) {
      .system > button {width: 25px;height: 25px;font-size: 0;}
@@ -124,3 +126,31 @@ header::after {content: "";display: block;width: 100%;height: 29px;background-co
      .footer-logo {align-self: flex-start;padding-top: 4px;}
      .footer-info address span {display: block;}
 }
+/* chaper2 로그인 팝업 */
+.modal-open #appPage {z-index: 9;position: relative;}
+.modal-header::after {display: none;}
+.layertit {font-size: 24px;color: #222;font-weight: 700;}
+.modal-header {padding: 10px 20px;}
+.bi {margin-right: 5px;}
+.loginform label {display: block;margin: 20px 0 10px 0;font-weight: 700;color: #676767;font-size: 16px;}
+.form-control {height: 40px;color: #676767; font-size: 14px;}
+.form-control::placeholder {color: #ddd;}
+.btnwrap {margin-top: 30px;}
+.btn {display: block;width: 100%;height: 40px;line-height: 38px;border-radius: 5px;font-size: 18px;text-align: center;}
+.btn-login {background: #17a2b8;color: #fff;}
+/* chaper2 회원가입 팝업 */
+.form-group .d-block {margin-bottom: 10px;font-size: 16px;}
+.form-group:nth-of-type(1) {padding-right: 80px;position: relative;}
+.form-group:nth-of-type(1) input + button {width: 75px; height: 40px;border: solid 1px #ddd;border-radius: 0; background: #eee;font-size: 14px;position: absolute; right: 0;bottom: 28px;}
+.form-group .form-text {display: block;padding: 0 20px;margin: 10px 0 0 10px; font-size: 12px;color: #17a2b8 !important;opacity: 0.6;position: relative;}
+.form-group .form-text::after {content: ""; display: block; width: 20px;height: 20px;background: url("/images/pencil.svg") no-repeat left center;opacity: 0.4; position: absolute;left: 0; top: 0;}
+.form-group .custom-control {display: inline-block;margin: 0 15px 0 20px;}
+.btnwrap.half {display: flex;justify-content: space-between;margin-top: 30px;}
+.btn-cancel {background: #d5d5d5;}
+.btnwrap.half .btn {flex-basis: 49%;}
+
+.form-group .d-block::before {content: "\F676";display: inline-block;margin: -4px 3px 0 0;vertical-align: middle;font-family: bootstrap-icons !important;}
+.form-group:nth-of-type(1) .d-block::before {content: "\F676";}
+.form-group:nth-of-type(2) .d-block::before {content: "\F47A";}
+.form-group:nth-of-type(3) .d-block::before {content: "\F68B";}
+.form-group:nth-of-type(4) .d-block::before {content: "\F890";}
