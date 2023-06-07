@@ -74,3 +74,53 @@ button:focus{outline: none;}
 .blind{display: none;overflow: hidden;position: absolute;width: 0;height: 0;padding: 0;margin: 0; font-size: 0;line-height: 0; text-indent: -9999em;visibility: hidden;outline: none;z-index: -1;}
 .link{cursor: pointer;}
 .flexbox{display: flex; }
+
+#wrap {display: flex;flex-direction: column; height: 100%;}
+footer { margin-top: auto;position: relative;}
+.contentbox {width: 100%;max-width: 1200px;margin: 0 auto; padding: 0 20px;}
+.topmenu {padding: 5px 0;}
+.topmenu .contentbox {display: flex;justify-content: space-between; align-items: center;}
+.logo img {width: 65px;}
+.system > button::before {content: ""; display: inline-block;width: 3px;height: 3px;border-radius: 50%;margin: 0 4px;background-color: #ddd;vertical-align: middle;}
+.system > button:nth-of-type(1):before { display: none;}
+nav {padding: 8px 0;background-color: #ff1f3d;position: relative;z-index: 3;}
+nav ul {display: flex;}
+nav ul > li { flex: 1;text-align: center;}
+nav ul > li > button {color: #fff;font-size: 18px; font-weight: 700;}
+header {position: relative;z-index: 9999;}
+header::after {content: "";display: block;width: 100%;height: 29px;background-color: #b31f28;position: absolute;left: 0; top: 80px;transform: rotate(1.5deg);box-shadow: 1px 5px 9px -3px rgb(50 50 50 / 75%); z-index: 2;}
+.botinfo {width: 100%;height: 50px; padding: 10px 0; background: #ebebeb; border-top: solid 1px #ddd;border-bottom: solid 1px #ddd;}
+.botbtngroup {max-width: 1200px;width: 100%;margin: 0 auto;padding: 0 20px;display: flex;justify-content: flex-end;align-items: center;}
+.btn-text {padding: 0 10px;position: relative;}
+.btn-text:before {content: "";display: block; width: 1px; height: 18px; background: #d1d1d1;position: absolute;left: 0;top: 0;}
+.btn-text:nth-of-type(1) {padding-left: 0;}
+.btn-text:nth-of-type(1):before {display: none;}
+.btn-gray { height: 29px; padding: 0 10px;margin-left: 10px;background-color: #606060; color: #fff;}
+.footerinfo {max-width: 1200px; width: 100%; margin: 0 auto; padding: 20px;display: flex;align-items: center;}
+.footerinfo:before {content: "";display: block;width: 100%; height: 35px;height: 35px;background: url("/images/footer-bg.png") repeat-x;position: absolute;left: 0;top: 50px; z-index: 2;}
+.footer-logo, .footer-sub {position: relative;z-index: 3;}
+.footer-logo img {width: 125px;}
+.footer-sub {flex: 1;padding-left: 20px;font-size: 12px;}
+/* 태블릿 */
+@media screen and (max-width: 767px) {
+     .system > button {width: 25px;height: 25px;font-size: 0;}
+     .system > button:before {display: none;}
+     .system > button:nth-of-type(1) {background: url("/images/icon-login.svg") no-repeat 0 0/100%;margin-right: 15px;}
+     .system > button:nth-of-type(2) {background: url("/images/icon-member.svg") no-repeat 0 0/100%;}
+}
+/* 모바일*/
+@media screen and (max-width: 767px) {
+     nav ul > li {flex: auto;padding-right: 10px; }
+     nav ul > li:nth-last-of-type(1) {padding-right: 0px;}
+     nav ul > li > button {font-size: 15px;}
+     .botinfo {height: auto;padding: 0 30px;}
+     .botbtngroup { flex-wrap: wrap;justify-content: center;padding: 10px 0;}
+     .footerinfo { position: relative;}
+     .footerinfo:before {top: 0;}
+     .btn-text {width: 33%;margin-bottom: 10px;font-size: 11px;}
+     .btn-gray {min-width: 75px; height: 24px;font-size: 11px;}
+     .btn-text + .btn-gray {margin-left: 0;}
+     .footer-logo img { width: 85px;}
+     .footer-logo {align-self: flex-start;padding-top: 4px;}
+     .footer-info address span {display: block;}
+}
