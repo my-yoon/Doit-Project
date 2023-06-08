@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header :class="Topclass">
         <div class="topmenu">
             <div class="contentbox">
                 <div class="logo">
@@ -139,7 +139,14 @@ export default {
                 mail: "",
                 checkedtype: [],
             },
+            Topclass: '',
         };
+    },
+    mounted() {
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    beforeDestory() {
+        window.removeEventListener("scroll", this.handleScroll);
     },
     methods: {
         goToPage(target) {
@@ -156,6 +163,15 @@ export default {
                 this.form.mail = "";
                 this.form.checkedtype = [];
             });
+        },
+        handleScroll() {
+            const scrollTop = window.pageYOffset;
+            const headerTop = document.querySelector("header").clientHeight;
+            if (scrollTop < headerTop) {
+                this.Topclass = "";
+            } else {
+                this.Topclass = "scrollTop";
+            }
         },
     },
 };
