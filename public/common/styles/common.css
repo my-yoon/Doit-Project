@@ -267,3 +267,56 @@ header.scrollTop::after {position: fixed;top: 22px;}
 @media screen and (max-width: 767px) {
      .titlebar > h1 {font-size: 20px;}
 }
+
+/* 18장 도서 소개 만들기 */
+.subpageslider {padding: 20px 20px 10px 20px;background-color: #f5f5f5;}
+.subpageslider .slick-arrow {margin-top: -35px;}
+
+.bookdetail {margin-top: 50px;}
+.booktitle {padding-bottom: 20px;border-bottom: solid 1px #ddd;font-size: 25px;color: #17a2b8;}
+.booktitle > span {display: block;font-size: 13px;color: #ababab;}
+.book-info {display: flex;padding: 50px 30px;}
+.imgview {max-width: 260px;}
+.imgview img {width: 100%;}
+.bookbtns {display: flex;justify-content: space-between;margin-top: 12px;max-width: 260px;}
+.btn-lightgray {background-color: #afafaf;color: #fff;height: 30px;font-size: 12px;line-height: 28px;border-radius: 0;}
+.bookbtns .btn-lightgray .bi::after {margin: -2px 2px 0 0;}
+.bookbtns .btn-lightgray {width: 49%;}
+
+.infolist {flex: 1 1 auto;padding: 0 20px;}
+.infolist li {margin-bottom: 22px;font-size: 16px;}
+.infolist li .label,
+.infolist li .infocontent {display: inline-block;}
+.infolist li .label {width: 150px;font-weight: 900;padding-left: 20px; position: relative;}
+.infolist li .infocontent {color: #222;}
+.infolist li .label::after {content: "";display: block;width: 18px;height: 18px;background: url("/images/file-text.svg") no-repeat left center/100%;opacity: 0.3;position: absolute;left: 0; top: 4px;}
+@media screen and (max-width: 767px) {
+     .book-info { display: block;padding: 20px 0;}
+     .titlebar > h1 {font-size: 20px;}
+     .imgview {margin: 0 auto;}
+     .infolist {padding: 0;margin-top: 20px;}
+     .infolist li {font-size: 14px;}
+     .infolist li .label {width: 90px;}
+     .infolist li .label::after {width: 14px;height: 14px; top: 3px;}
+}
+.detailTap {display: flex;}
+.detailTap .btn-group-toggle {flex: 1 1 auto;height: 40px;border-left: solid 1px #ddd;background-color: #eaeaea;}
+.btn-detailtap {color: #aeaeae;font-size: 14px;text-align: center;line-height: 40px;border-radius: 0;}
+.btn-detailtap .bi::before {margin: -2px 2px 0 0;}
+.detailTap .btn-group-toggle:nth-of-type(1) {border-left: none;}
+.btn-detailtap.active {background-color: #606060;color: #fff;}
+@media screen and (max-width: 767px) {
+     .detailTap {flex-wrap: wrap;}
+     .detailTap .btn-group-toggle {flex-basis: 33.3%;flex-shrink: 0;}
+     .detailTap .btn-group-toggle:nth-of-type(4) {border-left: none;}
+}
+.detailTapCon {padding: 30px;}
+.tapcontit {margin-bottom: 20px;font-size: 18px;color: #7952b3;font-weight: 900;}
+.tapcontit > strong {color: #7952b3;font-size: 24px;font-weight: 900;}
+.detailTapCon > P {margin-bottom: 20px;}
+@media screen and (max-width: 767px) {
+     .detailTapCon {padding: 20px 0;}
+     .tapcontit,.tapcontit > strong {font-size: 15px;}
+}
+
+.bookpage .rollimg.active .imgbox {display: block; border: solid 3px #d1e0e5;}
