@@ -144,15 +144,7 @@ footer {margin-top: auto;position: relative;}
 .btn-cancel { background: #d5d5d5; }
 .btnwrap.half .btn { flex-basis: 49%; }
 .form-group .d-block::before { content: "\F6766";display: inline-block; margin: -5px 3px 0 0; vertical-align: middle; font-family: bootstrap-icons !important; }
-.form-group:nth-of-type(1) .d-block::before {
-     content: "\F676";
-     }
-     .form-group:nth-of-type(2) .d-block::before {
-     content: "\F47A";
-     }
-     .form-group:nth-of-type(3) .d-block::before {
-     content: "\F68B";
-     }
-     .form-group:nth-of-type(4) .d-block::before {
-     content: "\F890";
-     }
+.form-group:nth-of-type(1) .d-block::before { content: "\F676"; }
+.form-group:nth-of-type(2) .d-block::before { content: "\F47A"; }
+.form-group:nth-of-type(3) .d-block::before { content: "\F68B"; }
+.form-group:nth-of-type(4) .d-block::before { content: "\F890";}

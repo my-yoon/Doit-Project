@@ -117,6 +117,7 @@
 export default {
     data() {
         return {
+            // 메뉴명 배열
             menulists: [
                 { menutext: "도서 소개", link: "/book" },
                 { menutext: "자료실", link: "/reference" },
