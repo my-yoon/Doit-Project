@@ -122,3 +122,37 @@ footer {margin-top: auto;position: relative;}
      .footer-logo { align-self: flex-start; padding-top: 4px; }
      .footer-info address span { display: block; }
 }
+/* 8장 로그인/회원가입 대화 상자 만들기 */
+.modal-open #appPage { z-index: 9; position: relative; }
+.modal-header::after { display: none; }
+.layertit { font-size: 24px; color: #222; font-weight: 700; }
+.modal-header { padding: 10px 20px; }
+.bi { margin-right: 5px; }
+.loginform label { display: block; margin: 20px 0 10px 0; font-weight: 700; color: #676767; font-size: 16px; }
+.form-control { height: 40px; color: #676767; font-size: 14px; }
+.form-control::placeholder { color: #ddd; }
+.btnwrap { margin-top: 30px; }
+.btn { display: block; width: 100%; height: 40px; line-height: 38px; border-radius: 5px; font-size: 18px; text-align: center; }
+.btn-login { background: #17a2b8; color: #fff; }
+.form-group .d-block { margin-bottom: 10px; font-size: 16px; }
+.form-group:nth-of-type(1) { padding-right: 80px; position: relative; }
+.form-group:nth-of-type(1) input + button { width: 75px; height: 40px; border: solid 1px #ddd; border-radius: 0; background: #eee; font-size: 14px; position: absolute; right: 0; bottom: 28px; }
+.form-group .form-text { display: block; padding: 0 20px; margin: 10px 0 0 10px; font-size: 12px; color: #17a2b8 !important; opacity: 0.6;position: relative; }
+.form-group .form-text::after { content: ""; display: block; width: 20px; height: 20px; background: url("/images/pencil.svg") no-repeat left center; opacity: 0.4; position: absolute; left: 0; top: 0; }
+.form-group .custom-control { display: inline-block; margin: 0 15px 0 20px; }
+.btnwrap.half { display: flex; justify-content: space-between; margin-top: 30px; }
+.btn-cancel { background: #d5d5d5; }
+.btnwrap.half .btn { flex-basis: 49%; }
+.form-group .d-block::before { content: "\F6766";display: inline-block; margin: -5px 3px 0 0; vertical-align: middle; font-family: bootstrap-icons !important; }
+.form-group:nth-of-type(1) .d-block::before {
+     content: "\F676";
+     }
+     .form-group:nth-of-type(2) .d-block::before {
+     content: "\F47A";
+     }
+     .form-group:nth-of-type(3) .d-block::before {
+     content: "\F68B";
+     }
+     .form-group:nth-of-type(4) .d-block::before {
+     content: "\F890";
+     }
