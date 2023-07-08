@@ -1,6 +1,6 @@
 <template>
     <header :class="Topclass">
-        <div class="topmenu" >
+        <div class="topmenu">
             <div class="contentbox">
                 <div class="logo">
                     <button v-on:click="goToPage('/main')">

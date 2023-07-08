@@ -14,6 +14,6 @@
 </template>
 <script>
 export default {
-props: ["pagetit"],
+    props: ["pagetit"],
 };
 </script>
