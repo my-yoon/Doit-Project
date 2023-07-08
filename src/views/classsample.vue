@@ -129,19 +129,19 @@ data(){
   },
   methods:{
     ClassCall(event){
-			event.preventDefault()
-			alert(JSON.stringify(this.form))
-      this.$nextTick(() => {
-      this.form.bookname = ''
-      this.form.companyname = ''
-      this.form.class = ''
-      this.form.name = ''
-      this.form.phonenum = ''
-      this.form.email = ''
-      this.form.memo = ''
-      this.form.checkedtype = []
-      })
-		},
+        event.preventDefault()
+        alert(JSON.stringify(this.form))
+        this.$nextTick(() => {
+            this.form.bookname = ''
+            this.form.companyname = ''
+            this.form.class = ''
+            this.form.name = ''
+            this.form.phonenum = ''
+            this.form.email = ''
+            this.form.memo = ''
+            this.form.checkedtype = []
+        })
+	},
   }
 };
 </script>
