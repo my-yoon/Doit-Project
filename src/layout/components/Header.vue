@@ -19,7 +19,8 @@
                     <li
                         v-for="(item, index) in menulists"
                         :key="index"
-                        v-on:click="goToPage(item.link)">
+                        v-on:click="goToPage(item.link)"
+                    >
                         <button v-html="item.menutext"></button>
                     </li>
                 </ul>
